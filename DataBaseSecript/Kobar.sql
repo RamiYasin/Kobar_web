@@ -17,11 +17,11 @@
 --
 
 
-CREATE DATABASE IF NOT EXISTS `kobarweb`
+CREATE DATABASE IF NOT EXISTS `kobar_web`
 CHARACTER SET utf8
 COLLATE utf8_unicode_ci;
 
-USE kobarweb;
+USE kobar_web;
 
 
 SET NAMES utf8mb4;
@@ -55,7 +55,11 @@ CREATE TABLE `news` (
                             `new_dis` varchar(5000) COLLATE utf8_unicode_ci NOT NULL
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 -- --------------------------------------------------------
-
+ALTER TABLE `news`
+    ADD PRIMARY KEY (`new_id`);
+ALTER TABLE `news`
+    MODIFY `new_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+COMMIT;
 --
 -- Indizes für die Tabelle `ordered_articles`
 --

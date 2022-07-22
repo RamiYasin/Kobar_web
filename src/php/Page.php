@@ -13,7 +13,7 @@ abstract class Page
             $host = "mariadb";
         }
 
-        $this->db = new mysqli("localhost" , "root" , "" , "ewa_bonus" );
+        $this->db = new mysqli("localhost" , "root" , "" , "kobarweb");
 
         if (mysqli_connect_errno()) {
             throw new Exception("Connect failed: " . mysqli_connect_error());
