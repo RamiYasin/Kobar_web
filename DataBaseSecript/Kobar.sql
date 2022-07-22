@@ -17,11 +17,11 @@
 --
 
 
-CREATE DATABASE IF NOT EXISTS `kobar_web`
+CREATE DATABASE IF NOT EXISTS `kobarweb`
 CHARACTER SET utf8
 COLLATE utf8_unicode_ci;
 
-USE kobar_web;
+USE kobarweb;
 
 
 SET NAMES utf8mb4;
