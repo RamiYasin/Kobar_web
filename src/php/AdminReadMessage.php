@@ -26,7 +26,7 @@ class AdminReadMessage extends Page{
                 $data[$i][$key] = htmlspecialchars($value);
             }
         }
-        $this->generatePageHeader("News");
+        $this->generatePageHeader("Messages");
 
         $nextKurs = $this->GenerateNextNewSection($data);
         echo <<<EOT
