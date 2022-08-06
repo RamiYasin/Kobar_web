@@ -52,7 +52,8 @@ CREATE TABLE `admin`(
 CREATE TABLE `news` (
                             `new_id` int(11) NOT NULL,
                             `new_Name` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
-                            `new_dis` varchar(5000) COLLATE utf8_unicode_ci NOT NULL
+                            `new_dis` varchar(5000) COLLATE utf8_unicode_ci NOT NULL,
+                            `new_img` VARBINARY(100)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 -- --------------------------------------------------------
 ALTER TABLE `news`
